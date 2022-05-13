@@ -1,102 +1,102 @@
-<<!DOCTYPE html>
-    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-    <html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-        <!--[if lt IE 7]>
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <script src="" async defer></script>
-        <div class="container">
-            <header class="title">
-                <h1 id="title">Gym Survey</h1>
-            </header>
-            <p id="description">Opis formularza</p>
-            <form id="survey-form">
+    <script src="" async defer></script>
+    <div class="container">
+        <header class="title">
+            <h1 id="title">Gym Survey</h1>
+        </header>
+        <p class="opis-formularza" id="description">Opis formularza</p>
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <input type=" text" id="name" required placeholder="First name">
+            </div>
+            <div>
+                <label for="last-name" id="last-label">Last Name</label>
+                <input type="text" id="last-name" placeholder="Last name">
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div>
+                <label for="number" id="number-label">Number</label>
+                <input type="number" id="number" placeholder=" Number">
+            </div>
+            <div>
+                <p>Have you ever been to the gym?</p>
+                <label for="radio-no">
+                    No
+                </label>
+                <input type="radio" id="radio-yes" name="radio" placeholder="Number">
+                <label for="radio-yes">Yes</label>
+                <input type="radio" name="radio" id="radio-no" placeholder="Number" checked>
+            </div>
+            <div>
+                <p>What would you like to see improved?</p>
                 <div>
-                    <label for="name" id="name-label">Name</label>
-                    <input type=" text" id="name" required placeholder="First name">
+                    <label class="font" for="clean">Clean floor</label>
+                    <input type="checkbox" id="clean" value="clean">
                 </div>
                 <div>
-                    <label for="last-name" id="last-label">Last Name</label>
-                    <input type="text" id="last-name" placeholder="Last name">
+                    <label class="font" for="equipment">A variety of equipment</label>
+                    <input type="checkbox" id="equipment" value="equipment">
                 </div>
                 <div>
-                    <label for="email" id="email-label">Email</label>
-                    <input type="email" id="email" placeholder="Email">
+                    <label class="font" for="music">Loud music</label>
+                    <input type="checkbox" id="music" value="music">
                 </div>
                 <div>
-                    <label for="number" id="number-label">Number</label>
-                    <input type="number" id="number" placeholder=" Number">
+                    <label class="font" for="classes">Group classes</label>
+                    <input type="checkbox" id="classes" value="classes">
                 </div>
                 <div>
-                    <p>Have you ever been to the gym?</p>
-                    <label for="radio-no">
-                        No
-                    </label>
-                    <input type="radio" id="radio-yes" name="radio" placeholder="Number">
-                    <label for="radio-yes">Yes</label>
-                    <input type="radio" name="radio" id="radio-no" placeholder="Number" checked>
+                    <label class="font" for="conditioning">Air conditioning</label>
+                    <input type="checkbox" id="conditioning" value="conditioning">
                 </div>
-                <div>
-                    <p>What would you like to see improved?</p>
-                    <div>
-                        <label for="clean">Clean floor</label>
-                        <input type="checkbox" id="clean" value="clean">
-                    </div>
-                    <div>
-                        <label for="equipment">A variety of equipment</label>
-                        <input type="checkbox" id="equipment" value="equipment">
-                    </div>
-                    <div>
-                        <label for="music">Loud music</label>
-                        <input type="checkbox" id="music" value="music">
-                    </div>
-                    <div>
-                        <label for="classes">Group classes</label>
-                        <input type="checkbox" id="classes" value="classes">
-                    </div>
-                    <div>
-                        <label for="conditioning">Air conditioning</label>
-                        <input type="checkbox" id="conditioning" value="conditioning">
-                    </div>
-                </div>
-                <div>
-                    <label for="dropdown">Choose an option</label>
-                    <select id="dropdown" style="display:block;">
-                        <option>Morning Classes</option>
-                        <option>Evening Classes</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="opinion">Write your opinion</label>
-                    <textarea id="opinion" name="comment" style="display:block;"
-                        placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div>
+                <label for="dropdown">Choose an option</label>
+                <select class="centered" id="dropdown">
+                    <option>Morning Classes</option>
+                    <option>Evening Classes</option>
+                </select>
+            </div>
+            <div>
+                <label for="opinion">Write your opinion</label>
+                <textarea class="centered textarea" id="opinion" name="comment">
+                    placeholder="Enter your comment here..."></textarea>
 
-                </div>
-                <div>
+            </div>
+            <div>
 
-                    <input type="submit" id="submit">
-                </div>
+                <input type="submit" id="submit">
+            </div>
 
-            </form>
-        </div>
-    </body>
-
-
+        </form>
+    </div>
+</body>
 
 
-    </html>
+
+
+</html>

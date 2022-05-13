@@ -1,0 +1,30 @@
+body {
+    background-color: chartreuse;
+    padding: 100px;
+}
+
+.container {
+    background-color: rgb(238, 22, 22);
+    text-align: center;
+}
+
+.opis-formularza {
+    color: blue;
+}
+
+.centered {
+    display: block;
+    margin: 0 auto;
+}
+
+.textarea {
+    border: 5px solid black;
+}
+
+.font {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.questions {
+    font-family: fantasy;
+}

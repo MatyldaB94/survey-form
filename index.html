@@ -22,77 +22,79 @@
     <script src="" async defer></script>
     <div class="container">
         <header class="title">
-            <h1 id="title">Gym Survey</h1>
+            <h1 class="tittle" id="title">Gym Survey</h1>
         </header>
         <p class="opis-formularza" id="description" class="questions">In order for us to continually improve our service
             and programs an
             offer to you, we would appreciate you taking few minutest to answer te following questions. </p>
         <form id="survey-form">
-            <div>
+            <div class="basic-information">
                 <label for="name" id="name-label">Name</label>
                 <input type=" text" id="name" required placeholder="First name">
             </div>
-            <div>
+            <div class="basic-information">
                 <label for="last-name" id="last-label">Last Name</label>
                 <input type="text" id="last-name" placeholder="Last name">
             </div>
-            <div>
+            <div class="basic-information">
                 <label for="email" id="email-label">Email</label>
                 <input type="email" id="email" placeholder="Email">
             </div>
-            <div>
+            <div class="basic-information">
                 <label for="number" id="number-label">Number</label>
                 <input type="number" id="number" placeholder=" Number">
             </div>
             <div>
                 <p class="questions">Have you ever been to the gym?</p>
-                <label for="radio-no">
-                    No
-                </label>
+                <label for="radio-no">No</label>
                 <input type="radio" id="radio-yes" name="radio" placeholder="Number">
                 <label for="radio-yes">Yes</label>
                 <input type="radio" name="radio" id="radio-no" placeholder="Number" checked>
             </div>
             <div>
                 <p class="questions">What would you like to see improved?</p>
-                <div>
-                    <label class="font" for="clean">Clean floor</label>
+                <div class="basic-information-checkbox">
                     <input type="checkbox" id="clean" value="clean">
+                    <label class="requirements" class="font" for="clean">Clean floor</label>
+
                 </div>
-                <div>
-                    <label class="font" for="equipment">A variety of equipment</label>
+                <div class="basic-information-checkbox">
                     <input type="checkbox" id="equipment" value="equipment">
+                    <label class="requirements" class="font" for="equipment">A variety of equipment</label>
                 </div>
-                <div>
-                    <label class="font" for="music">Loud music</label>
+                <div class="basic-information-checkbox">
                     <input type="checkbox" id="music" value="music">
+                    <label class="requirements" class="font" for="music">Loud music</label>
                 </div>
-                <div>
-                    <label class="font" for="classes">Group classes</label>
+                <div class="basic-information-checkbox">
                     <input type="checkbox" id="classes" value="classes">
+                    <label class="requirements" class="font" for="classes">Group classes</label>
+                </div>
+                <div class="basic-information-checkbox">
+                    <input type="checkbox" id="discount" value="discount">
+                    <label class="requirements" class="font" for="discount">Student discount</label>
+                </div>
+                <div class="basic-information-checkbox">
+                    <input type="checkbox" id="conditioning" value="conditioning">
+                    <label class="requirements" class="font" for="conditioning">Air conditioning</label>
+                </div>
+
+                <div>
+                    <label for="dropdown" class="questions">Choose an option</label>
+                    <select class="centered" id="dropdown">
+                        <option>Morning Classes</option>
+                        <option>Evening Classes</option>
+                    </select>
                 </div>
                 <div>
-                    <label class="font" for="conditioning">Air conditioning</label>
-                    <input type="checkbox" id="conditioning" value="conditioning">
-                </div>
-            </div>
-            <div>
-                <label for="dropdown">Choose an option</label>
-                <select class="centered" id="dropdown">
-                    <option>Morning Classes</option>
-                    <option>Evening Classes</option>
-                </select>
-            </div>
-            <div>
-                <label for="opinion" class="quesiotns">Write your opinion</label>
-                <textarea class="centered textarea" id="opinion" name="comment">
+                    <label class="questions" for="opinion">Write your opinion</label>
+                    <textarea class="centered textarea" id="opinion" name="comment">
                     placeholder="Enter your comment here..."></textarea>
+                </div>
 
-            </div>
-            <div>
-
-                <input type="submit" id="submit">
-            </div>
+                <div>
+                    <input type="submit" id="submit">
+                </div>
 
         </form>
     </div>

@@ -1,30 +1,91 @@
-body {
-    background-color: chartreuse;
+body::before {
+    z-index: -1;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     padding: 100px;
+    background: linear-gradient(to bottom right, red, blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container {
-    background-color: rgb(238, 22, 22);
+    background-color: rgb(153, 2, 85);
     text-align: center;
+    padding: 10% 10%;
+    border-radius: 20%;
+    width: 600px;
+    height: 400;
+    margin: 100px auto;
+
+
+}
+
+.title {
+    text-decoration: underline;
+    font-size: 30px;
+    color: rgb(12, 12, 12);
 }
 
 .opis-formularza {
-    color: blue;
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.basic-information {
+    font-size: large;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+
+}
+
+.basic-information-checkbox {
+    font-size: large;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    margin: 5px auto;
 }
 
 .centered {
     display: block;
     margin: 0 auto;
+    width: 300px;
+    height: 35px;
 }
 
 .textarea {
     border: 5px solid black;
+    resize: none;
+    height: 150px;
+    width: 400px
 }
 
 .font {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .questions {
     font-family: fantasy;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.requirements {
+    font-size: large;
+    text-align: right;
+    display: flex;
+}
+
+.space-between {
+    padding: 10% 10%;
 }

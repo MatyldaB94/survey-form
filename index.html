@@ -19,7 +19,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <script src="" async defer></script>
+    <script src="index.js" async defer></script>
     <div class="container">
         <header class="title">
             <h1 class="tittle" id="title">Gym Survey</h1>
@@ -78,25 +78,28 @@
                     <input type="checkbox" id="conditioning" value="conditioning">
                     <label class="requirements" class="font" for="conditioning">Air conditioning</label>
                 </div>
-
                 <div>
-                    <label for="dropdown" class="questions">Choose an option</label>
+                    <label for="dropdown" class="questions space-between">Choose an option</label>
                     <select class="centered" id="dropdown">
                         <option>Morning Classes</option>
                         <option>Evening Classes</option>
                     </select>
                 </div>
                 <div>
-                    <label class="questions" for="opinion">Write your opinion</label>
-                    <textarea class="centered textarea" id="opinion" name="comment">
-                    placeholder="Enter your comment here..."></textarea>
-                </div>
+                    <label class="questions space-between" for="opinion">Write your opinion</label>
 
+                    <textarea class="centered textarea" id="opinion" name="comment">
+                    write your opinion</textarea>
+                </div>
                 <div>
-                    <input type="submit" id="submit">
+                    <input class="submit" type="submit" id="submit">
                 </div>
 
         </form>
+        <div>
+            <p>created by</p>
+            <p id="myName"></p>
+        </div>
     </div>
 </body>
 

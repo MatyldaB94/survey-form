@@ -64,7 +64,7 @@ body::before {
 }
 
 .textarea {
-    border: 5px solid black;
+    border: 2px solid black;
     resize: none;
     height: 150px;
     width: 400px
@@ -87,5 +87,10 @@ body::before {
 }
 
 .space-between {
-    padding: 10% 10%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.submit {
+    width: 68%;
 }

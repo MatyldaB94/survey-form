@@ -30,7 +30,7 @@
         <form id="survey-form">
             <div class="basic-information">
                 <label for="name" id="name-label">Name</label>
-                <input type=" text" id="name" required placeholder="First name">
+                <input type="text" id="name" required placeholder="First name">
             </div>
             <div class="basic-information">
                 <label for="last-name" id="last-label">Last Name</label>
@@ -38,18 +38,18 @@
             </div>
             <div class="basic-information">
                 <label for="email" id="email-label">Email</label>
-                <input type="email" id="email" placeholder="Email">
+                <input type="email" id="email" placeholder="Email" required>
             </div>
             <div class="basic-information">
                 <label for="number" id="number-label">Number</label>
-                <input type="number" id="number" placeholder=" Number">
+                <input type="number" id="number" placeholder=" Number" min="0" max="9">
             </div>
             <div>
                 <p class="questions">Have you ever been to the gym?</p>
                 <label for="radio-no">No</label>
-                <input type="radio" id="radio-yes" name="radio" placeholder="Number">
+                <input type="radio" id="radio-yes" name="radio" placeholder="Number" value="radio-yes">
                 <label for="radio-yes">Yes</label>
-                <input type="radio" name="radio" id="radio-no" placeholder="Number" checked>
+                <input type="radio" name="radio" id="radio-no" placeholder="Number" checked value="radio-no">
             </div>
             <div>
                 <p class="questions">What would you like to see improved?</p>
